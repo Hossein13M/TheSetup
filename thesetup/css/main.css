@@ -1,0 +1,46 @@
+/* dastan this is the start of the CSS file and we are ready to make it work! */
+
+
+/* divSep this is the General Styles! */
+
+body {
+    font-family: 'lato';
+    color: #111111;
+    position: relative;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 90px 0;
+}
+
+strong {
+    font-weight: 900;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+hr {
+    width: 80px;
+}
+
+hr.icon:after {
+    content: "\f123";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .30em;
+    font-family: 'FontAwesome';
+    font-size: 1.5em;
+    color: #873fb5;
+    background-color: #fff;
+    /* fixMe this needs to be fixed with the help of Alious */
+}
