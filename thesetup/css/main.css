@@ -30,6 +30,7 @@ h3 {
 
 hr {
     width: 80px;
+    padding: 10px;
 }
 
 hr.icon:after {
