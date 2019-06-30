@@ -53,6 +53,8 @@ hr.icon:after {
 .home-section {
     color: #ffffff;
     background-image: url(/thesetup/images/header-setup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 600px;
 }
 
@@ -61,13 +63,75 @@ hr.icon:after {
     border-bottom: solid #ffffff;
 }
 
+#about {
+    background-image: url(/thesetup/images/about-us.jpg);
+}
+
+#services {
+    background-image: url(/thesetup/images/);
+}
+
+#skills {
+    background-image: url(/thesetup/images/skills.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
 #skills a {
     color: #ffffff;
-    /* fixMe after putting the bgimage I need to uncomment the above code due to its color */
-    padding-right: 10px;
+    border-bottom: solid;
+    margin-right: 10px;
+    /* fixMe the border have occupied extra space  */
 }
 
 #skills a:hover {
     color: #990df0;
     text-decoration: none;
+}
+
+.linear-g {
+    background-image: linear-gradient(-90deg, red, yellow);
+}
+
+#author {
+    background-image: url(/thesetup/images/author.jpg);
+    background-size: cover;
+}
+
+#footer {
+    background-image: url(/thesetup/images/footer-setup.jpg);
+    background-size: cover;
+}
+
+#copyright {
+    color: #ffffff;
+    background-color: #241c29;
+}
+
+
+/* divSep this is the section where we set the bgimage for each of the stats  */
+
+.stat i {
+    color: #ffffff;
+}
+
+.code-line-stat {
+    background-image: url(/thesetup/images/code-stats.jpg);
+    background-size: cover;
+}
+
+.feedback-stat {
+    background-image: url(/thesetup/images/feedback-stats.jpg);
+    background-size: cover;
+}
+
+.client-stat {
+    background-image: url(/thesetup/images/client-stats.jpg);
+    background-size: cover;
+}
+
+.project-stat {
+    background-image: url(/thesetup/images/project-stats.jpg);
+    background-size: cover;
 }
