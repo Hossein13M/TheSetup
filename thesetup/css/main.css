@@ -45,3 +45,29 @@ hr.icon:after {
     background-color: #fff;
     /* fixMe this needs to be fixed with the help of Alious */
 }
+
+.sectionHeading h3 {
+    color: #873fb5;
+}
+
+.home-section {
+    color: #ffffff;
+    background-image: url(/thesetup/images/header-setup.jpg);
+    height: 600px;
+}
+
+.logo {
+    border-top: solid #ffffff;
+    border-bottom: solid #ffffff;
+}
+
+#skills a {
+    color: #ffffff;
+    /* fixMe after putting the bgimage I need to uncomment the above code due to its color */
+    padding-right: 10px;
+}
+
+#skills a:hover {
+    color: #990df0;
+    text-decoration: none;
+}
