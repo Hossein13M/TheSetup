@@ -82,11 +82,51 @@ hr.icon::after {
     margin-top: 200px;
 }
 
+#Home h3 {
+    margin: 0;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.learn-more {
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.learn-more i {
+    position: absolute;
+}
+
+.learn-more .second-arrow {
+    top: 8px;
+}
+
+.learn-more .third-arrow {
+    top: 16px;
+}
+
 #about {
-    background-image: url(/thesetup/images/about-us.jpg);
-    min-height: 450px;
+    background: url(/thesetup/images/about-us.jpg)fixed;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     color: #ffffff;
+    min-height: 450px;
+}
+
+#about h2 {
+    font-weight: 100;
+}
+
+#about h3 {
+    font-weight: 300;
+}
+
+#about u {
+    font-weight: 800;
 }
 
 #services {
