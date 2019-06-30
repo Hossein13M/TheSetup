@@ -10,6 +10,10 @@ body {
     overflow-x: hidden;
 }
 
+::selection {
+    background-color: #bf92db;
+}
+
 section {
     padding: 90px 0;
 }
@@ -31,16 +35,17 @@ h3 {
 hr {
     width: 80px;
     padding: 10px;
+    overflow: visible;
 }
 
-hr.icon:after {
+hr.icon::after {
     content: "\f123";
     display: inline-block;
     position: relative;
     top: -.8em;
     padding: 0 .30em;
     font-family: 'FontAwesome';
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: #873fb5;
     background-color: #fff;
     /* fixMe this needs to be fixed with the help of Alious */
@@ -48,23 +53,40 @@ hr.icon:after {
 
 .sectionHeading h3 {
     color: #873fb5;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.sectionHeading hr {
+    color: #873fb5;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .home-section {
-    color: #ffffff;
-    background-image: url(/thesetup/images/header-setup.jpg);
+    background: url(/thesetup/images/header-setup.jpg) fixed;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    color: #ffffff;
     height: 600px;
 }
 
 .logo {
-    border-top: solid #ffffff;
-    border-bottom: solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    font-size: 72px;
+    font-weight: 100;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 200px;
 }
 
 #about {
     background-image: url(/thesetup/images/about-us.jpg);
+    min-height: 450px;
+    background-size: cover;
+    color: #ffffff;
 }
 
 #services {
@@ -76,6 +98,7 @@ hr.icon:after {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
+    min-height: 450px;
 }
 
 #skills a {
@@ -90,30 +113,43 @@ hr.icon:after {
     text-decoration: none;
 }
 
-.linear-g {
-    background-image: linear-gradient(-90deg, red, yellow);
-}
-
 #author {
     background-image: url(/thesetup/images/author.jpg);
     background-size: cover;
+    min-height: 450px;
+    color: #ffffff;
 }
 
 #footer {
     background-image: url(/thesetup/images/footer-setup.jpg);
     background-size: cover;
+    min-height: 270px;
+    color: #ffffff;
+}
+
+#footer h2 {
+    border-top: solid #ffffff;
+    border-bottom: solid #ffffff;
 }
 
 #copyright {
     color: #ffffff;
     background-color: #241c29;
+    height: auto;
 }
 
 
 /* divSep this is the section where we set the bgimage for each of the stats  */
 
-.stat i {
+.stat {
+    min-height: 250px;
     color: #ffffff;
+}
+
+.stat i {
+    transform: translate(0%, 90%);
+    font-size: 48px;
+    position: relative;
 }
 
 .code-line-stat {
