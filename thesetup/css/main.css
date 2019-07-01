@@ -131,8 +131,8 @@ hr.icon::after {
 
 #about h3 {
     font-weight: 300;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: center;
 }
 
@@ -258,8 +258,8 @@ hr.icon::after {
     font-weight: 300;
 }
 
-.portfolio-overlay,
-.portfolio-thumb {
+.portfolio-thumb,
+.portfolio-overlay {
     max-width: 390px;
     height: 270px;
 }
@@ -379,8 +379,8 @@ hr.icon::after {
 }
 
 #author p {
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: center;
 }
 
@@ -478,4 +478,47 @@ hr.icon::after {
     color: #918c93;
     background-color: #241c29;
     height: auto;
+}
+
+
+/* divSep media queries */
+
+@media (min-width: 970px) and (max-width: 1170px) {
+    .service-item i {
+        float: none;
+        border: none;
+        display: block;
+    }
+    .service-item {
+        text-align: center;
+    }
+    .service-title {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .progress-bars {
+        margin-top: 20px;
+    }
+    .google-map {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 780px) {
+    .portfolio-thumb {
+        text-align: center;
+        max-width: none;
+        width: 100%;
+        float: none;
+    }
+    .portfolio-overlay {
+        text-align: center;
+        max-width: none;
+        width: 100%;
+        float: none;
+    }
 }
