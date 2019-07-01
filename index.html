@@ -19,6 +19,8 @@
     <!-- libFile these two bellow are the owl carousel for the sliders -->
     <link rel="stylesheet" href="/thesetup/css/owl.carousel.css">
     <link rel="stylesheet" href="/thesetup/css/owl.theme.css">
+    <!-- libFile this is the lightbox -->
+    <link rel="stylesheet" href="/thesetup/css/lightbox.css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -210,7 +212,7 @@
                         <img src="/thesetup/images/portfolio1.jpg" class="img-responsive" alt="image not available">
                         <div class="portfolio-overlay">
                             <h3 class="text-capitalize"> the girl</h3>
-                            <a href="#">
+                            <a href="/thesetup/images/portfolio1.jpg" data-lightbox="lightBox">
                                 <i class="fa fa-search"></i>
                             </a>
                         </div>
@@ -221,8 +223,7 @@
                         <img src="/thesetup/images/portfolio2.jpg" class="img-responsive" alt="image not available">
                         <div class="portfolio-overlay">
                             <h3 class="text-capitalize"> the tree</h3>
-                            <a href="#">
-                                <i class="fa fa-search"></i>
+                            <a href="/thesetup/images/portfolio2.jpg" data-lightbox="lightBox" <i class="fa fa-search"></i>
                             </a>
                         </div>
                     </div>
@@ -232,7 +233,7 @@
                         <img src="/thesetup/images/portfolio3.jpg" class="img-responsive" alt="image not available">
                         <div class="portfolio-overlay">
                             <h3 class="text-capitalize"> the boat</h3>
-                            <a href="#">
+                            <a href="/thesetup/images/portfolio3.jpg" data-lightbox="lightBox">
                                 <i class="fa fa-search"></i>
                             </a>
                         </div>
@@ -243,7 +244,7 @@
                         <img src="/thesetup/images/portfolio4.jpg" class="img-responsive" alt="image not available">
                         <div class="portfolio-overlay">
                             <h3 class="text-capitalize"> the project</h3>
-                            <a href="#">
+                            <a href="/thesetup/images/portfolio4.jpg" data-lightbox="lightBox">
                                 <i class="fa fa-search"></i>
                             </a>
                         </div>
@@ -254,7 +255,7 @@
                         <img src="/thesetup/images/portfolio5.jpg" class="img-responsive" alt="image not available">
                         <div class="portfolio-overlay">
                             <h3 class="text-capitalize"> the boy</h3>
-                            <a href="#">
+                            <a href="/thesetup/images/portfolio5.jpg" data-lightbox="lightBox">
                                 <i class="fa fa-search"></i>
                             </a>
                         </div>
@@ -265,7 +266,7 @@
                         <img src="/thesetup/images/portfolio6.jpg" class="img-responsive" alt="image not available">
                         <div class="portfolio-overlay">
                             <h3 class="text-capitalize"> the bridge</h3>
-                            <a href="#">
+                            <a href="/thesetup/images/portfolio6.jpg" data-lightbox="lightBox">
                                 <i class="fa fa-search"></i>
                             </a>
                         </div>
@@ -313,7 +314,7 @@
     <section id="author">
         <div class="container-fluid">
             <div class="row">
-                <div id="owl-demo" class="owl carousel text-center">
+                <div id="owl-demo" class="text-center">
                     <div class="author-details text-center">
                         <h3 class="text-capitalize"> <strong>ehab alaa</strong> <span> - udemey</span> </h3>
                         <img src="/thesetup/images/ehab-alla.jpg" alt="the image is not available">
@@ -398,8 +399,9 @@
     <script src="thesetup/js/bootstrap.min.js"></script>
 </body>
 
-</html>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- divSep -->
+
+<!-- divSep Include all compiled plugins (below), or include individual files as needed -->
 
 <!-- libFile the counter -->
 <script src='http://code.jquery.com/jquery-2.1.1.min.js' type='text/javascript'></script>
@@ -408,11 +410,13 @@
     $(".num").numScroll();
 </script>
 
+<!-- libFile this is the owl carousel -->
+<script src="thesetup/js/theowl.carousel.js"></script>
+<!-- fixMe this needs to be checked once again -->
+
+<!-- libFile this is the lightBox -->
+<script src="thesetup/js/lightbox-plus-jquery.min.js"></script>
 
 
-
-
-
-</body>
 
 </html>
