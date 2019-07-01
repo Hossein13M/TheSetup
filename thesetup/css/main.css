@@ -101,6 +101,7 @@ hr.icon::after {
 
 .learn-more i {
     position: absolute;
+    font-size: 50px;
 }
 
 .learn-more .second-arrow {
@@ -121,6 +122,7 @@ hr.icon::after {
     background-size: cover;
     color: #ffffff;
     min-height: 500px;
+    padding-top: 150px;
 }
 
 #about h2 {
@@ -129,6 +131,9 @@ hr.icon::after {
 
 #about h3 {
     font-weight: 300;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
 }
 
 #about u {
@@ -370,7 +375,13 @@ hr.icon::after {
     min-height: 450px;
     color: #ffffff;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
+}
+
+#author p {
+    padding-left: 180px;
+    padding-right: 180px;
+    text-align: center;
 }
 
 #author h3 {
