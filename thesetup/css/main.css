@@ -365,6 +365,67 @@ hr.icon::after {
     background-size: cover;
     min-height: 450px;
     color: #ffffff;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#author h3 {
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+#author h3 span {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#author img {
+    margin-bottom: 35px;
+}
+
+
+/* divSep this is the contact section */
+
+#contact input {
+    background-color: #f5f5f5;
+    border-color: #d1d1d1;
+}
+
+#contact input:hover {
+    background-color: #ffffff;
+    border-color: #8d3aa4;
+    transition: all 0.2s ease-in-out;
+}
+
+#contact input:focus {
+    background-color: #ffffff;
+    border-color: #8d3aa4;
+}
+
+#contact textarea {
+    background-color: #f5f5f5;
+}
+
+#contact textarea:hover {
+    background-color: #ffffff;
+    border-color: #8d3aa4;
+    transition: all 0.2s ease-in-out;
+}
+
+#contact textarea:focus {
+    background-color: #ffffff;
+    border-color: #8d3aa4;
+}
+
+#contact button {
+    background-color: #f5f5f5;
+    border-color: #d1d1d1;
+}
+
+#contact button:hover {
+    background-color: #ffffff;
+    border-color: #8d3aa4;
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -383,10 +444,14 @@ hr.icon::after {
     display: inline-block;
     padding: 10px;
     font-size: 48px;
+    font-weight: 100;
 }
 
 #footer .footer-icons i {
-    padding-right: 25px;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
