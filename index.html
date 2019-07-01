@@ -282,25 +282,25 @@
             <div class="row">
                 <div class="stat code-line-stat col-md-3 col-sm-6 col-xs-12 text-center">
                     <i class="fa fa-code"></i>
-                    <h3 class="text-capitalize"><strong>24312</strong></h3>
+                    <h3 class="text-capitalize num"><strong>24312</strong></h3>
                     <h2 class="text-capitalize">code lines</h2>
                 </div>
 
                 <div class="stat project-stat col-md-3 col-sm-6 col-xs-12 text-center">
                     <i class="fa fa-file"></i>
-                    <h3 class="text-capitalize"><strong>530</strong></h3>
+                    <h3 class="text-capitalize num"><strong>530</strong></h3>
                     <h2 class="text-capitalize">completed projects</h2>
                 </div>
 
                 <div class="stat client-stat col-md-3 col-sm-6 col-xs-12 text-center">
                     <i class="fa fa-users"></i>
-                    <h3 class="text-capitalize"><strong>45</strong></h3>
+                    <h3 class="text-capitalize num"><strong>45</strong></h3>
                     <h2 class="text-capitalize">happy client</h2>
                 </div>
 
                 <div class="stat feedback-stat col-md-3 col-sm-6 col-xs-12 text-center">
                     <i class="fa fa-thumbs-up"></i>
-                    <h3 class="text-capitalize"><strong>98%</strong></h3>
+                    <h3 class="text-capitalize num number-along-with"><strong>98</strong></h3>
                     <h2 class="text-capitalize">positive feedback</h2>
                 </div>
 
@@ -378,6 +378,10 @@
             </div>
         </div>
     </section>
+
+    <span class="num">888888</span>
+    <!--推荐写法-->
+    <span class="num" data-num="888888"></span>
     <!-- divSep this is the copyright section of the footer -->
     <div id="copyright">
         <div class="container-fluid text-center copyright-footer">
@@ -385,41 +389,33 @@
         </div>
     </div>
 
+    <span class="num">888888</span>
+    <span class="num" data-num="888888"></span>
+
 
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="thesetup/js/bootstrap.min.js"></script>
 </body>
 
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<!-- libFile and this is the js file of the owl carousel (for slider) -->
-<script src="js/owl.carousel.js"></script>
+
+<!-- libFile the counter -->
+<script src='http://code.jquery.com/jquery-2.1.1.min.js' type='text/javascript'></script>
+<script src="thesetup/js/jquery.numscroll.js" type="text/javascript" charset="utf-8"></script>
 <script>
-    $(document).ready(function() {
-        $("#owl-demo").owlCarousel({
-
-            navigation: true,
-            pagination: false,
-            slideSpeed: 300,
-            paginationSpeed: 400,
-            singleItem: true,
-
-        });
-    });
+    $(".num").numScroll();
 </script>
 
 
-<!-- fixMe the above JS should get fixed and solid I will come back later -->
-<!-- libFile the bellow is the jquery numbers -->
-<script src="js/Counter-Up2-master/index.js"></script>
-<!-- counterUp(document.querySelector('.counter') { duration: 1000, delay: 16 }) -->
-<!-- fixMe the above code is for the counting number -->
+
+
+
+
 </body>
 
 </html>

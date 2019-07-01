@@ -357,6 +357,10 @@ hr.icon::after {
     background-size: cover;
 }
 
+.number-along-with::after {
+    content: '%';
+}
+
 
 /* divSep this is the author section */
 
