@@ -51,6 +51,9 @@ hr.icon::after {
     /* fixMe this needs to be fixed with the help of Alious */
 }
 
+
+/* divSep this is the section heading part */
+
 .sectionHeading h3 {
     color: #873fb5;
     font-size: 24px;
@@ -108,6 +111,9 @@ hr.icon::after {
     top: 16px;
 }
 
+
+/* divSep this is the about section */
+
 #about {
     background: url(/thesetup/images/about-us.jpg)fixed;
     background-repeat: no-repeat;
@@ -128,6 +134,9 @@ hr.icon::after {
 #about u {
     font-weight: 800;
 }
+
+
+/* divSep this is the services section */
 
 #services {
     background-image: url(/thesetup/images/);
@@ -161,6 +170,9 @@ hr.icon::after {
     padding-right: 20px;
 }
 
+
+/* divSep this is the skills section */
+
 #skills {
     background: url(/thesetup/images/skills.jpg) fixed;
     background-repeat: no-repeat;
@@ -169,11 +181,22 @@ hr.icon::after {
     min-height: 450px;
 }
 
+#skills h1 {
+    font-size: 48px;
+}
+
+#skills p {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
 #skills a {
     color: #ffffff;
-    border-bottom: solid;
-    margin-right: 10px;
-    /* fixMe the border have occupied extra space  */
+    border-bottom: 2px solid;
+    border-radius: 2px;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    font-size: 16px;
 }
 
 #skills a:hover {
@@ -181,33 +204,39 @@ hr.icon::after {
     text-decoration: none;
 }
 
-#author {
-    background: url(/thesetup/images/author.jpg)fixed;
-    background-size: cover;
-    min-height: 450px;
-    color: #ffffff;
+.progress {
+    height: 30px;
+    margin-bottom: 30px;
+    opacity: 0.80;
+    background-color: #111111;
+    box-shadow: none;
+    /* dastan: we did not implement border-radius due to bootstrap does have it itself  */
 }
 
-#footer {
-    background: url(/thesetup/images/footer-setup.jpg)fixed;
-    background-size: cover;
-    min-height: 270px;
-    color: #ffffff;
+.progress-bars h5 {
+    font-size: 14px;
+    font-weight: 900;
 }
 
-#footer h2 {
-    border-top: solid #ffffff;
-    border-bottom: solid #ffffff;
+.progress-bar {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7a3c94+1,8d4563+100 */
+    background: #7a3c94;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #7a3c94 1%, #8d4563 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #7a3c94 1%, #8d4563 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #7a3c94 1%, #8d4563 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7a3c94', endColorstr='#8d4563', GradientType=1);
+    /* IE6-9 */
 }
 
-#copyright {
-    color: #ffffff;
-    background-color: #241c29;
-    height: auto;
-}
+
+/* dastan the portfolio section have left */
 
 
-/* divSep this is the section where we set the bgimage for each of the stats  */
+/* divSep the stats section */
 
 .stat {
     min-height: 250px;
@@ -238,4 +267,38 @@ hr.icon::after {
 .project-stat {
     background-image: url(/thesetup/images/project-stats.jpg);
     background-size: cover;
+}
+
+
+/* divSep this is the author section */
+
+#author {
+    background: url(/thesetup/images/author.jpg)fixed;
+    background-size: cover;
+    min-height: 450px;
+    color: #ffffff;
+}
+
+
+/* divSep the footer section */
+
+#footer {
+    background: url(/thesetup/images/footer-setup.jpg)fixed;
+    background-size: cover;
+    min-height: 270px;
+    color: #ffffff;
+}
+
+#footer h2 {
+    border-top: solid #ffffff;
+    border-bottom: solid #ffffff;
+}
+
+
+/* divSep the copyright section */
+
+#copyright {
+    color: #ffffff;
+    background-color: #241c29;
+    height: auto;
 }
