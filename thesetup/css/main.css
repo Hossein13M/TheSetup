@@ -138,6 +138,9 @@ hr.icon::after {
 
 /* divSep this is the services section */
 
+
+/* fixMe the services section needs a little fix in the border of the display icon */
+
 #services {
     background-image: url(/thesetup/images/);
 }
@@ -308,18 +311,28 @@ hr.icon::after {
 }
 
 
-/* fixMe the whole portfolio needs to be checked */
-
-
 /* divSep the stats section */
 
 .stat {
-    min-height: 250px;
+    height: 250px;
     color: #ffffff;
 }
 
+.stat h3 {
+    margin-top: 30px;
+    line-height: 5px;
+    font-size: 30px;
+}
+
+.stat h2 {
+    margin-top: 30px;
+    line-height: 5px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
 .stat i {
-    transform: translate(0%, 90%);
+    padding-top: 50px;
     font-size: 48px;
     position: relative;
 }
@@ -365,8 +378,15 @@ hr.icon::after {
 }
 
 #footer h2 {
-    border-top: solid #ffffff;
-    border-bottom: solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    display: inline-block;
+    padding: 10px;
+    font-size: 48px;
+}
+
+#footer .footer-icons i {
+    padding-right: 25px;
 }
 
 
