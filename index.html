@@ -282,7 +282,7 @@
             <div class="row">
                 <div class="stat code-line-stat col-md-3 col-sm-6 col-xs-12 text-center">
                     <i class="fa fa-code"></i>
-                    <h3 class="text-capitalize"><strong class="numscroller" data-min="0" data-max="24312" data-delay="1" data-increment="10"></strong></h3>
+                    <h3 class="text-capitalize"><strong>24312</strong></h3>
                     <h2 class="text-capitalize">code lines</h2>
                 </div>
 
@@ -313,11 +313,14 @@
     <section id="author">
         <div class="container-fluid">
             <div class="row">
-                <div class="author-details text-center">
-                    <h3 class="text-capitalize"> <strong>ehab alaa</strong> <span> - udemey</span> </h3>
-                    <img src="/thesetup/images/ehab-alla.jpg" alt="the image is not available">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum laboriosam dolorem animi placeat numquam harum quia laborum alias, cum in eveniet unde odio dolore voluptatem veniam praesentium suscipit non.</p>
+                <div id="owl-demo" class="owl carousel text-center">
+                    <div class="author-details text-center">
+                        <h3 class="text-capitalize"> <strong>ehab alaa</strong> <span> - udemey</span> </h3>
+                        <img src="/thesetup/images/ehab-alla.jpg" alt="the image is not available">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita rerum laboriosam dolorem animi placeat numquam harum quia laborum alias, cum in eveniet unde odio dolore voluptatem veniam praesentium suscipit non.</p>
+                    </div>
                 </div>
+
             </div>
         </div>
 
@@ -397,9 +400,26 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- libFile and this is the js file of the owl carousel (for slider) -->
 <script src="js/owl.carousel.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+
+            navigation: true,
+            pagination: false,
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true,
+
+        });
+    });
+</script>
+
+
 <!-- fixMe the above JS should get fixed and solid I will come back later -->
 <!-- libFile the bellow is the jquery numbers -->
-<script src="js/numscroller-1.0.js"></script>
+<script src="js/Counter-Up2-master/index.js"></script>
+counterUp(document.querySelector('.counter') { duration: 1000, delay: 16 })
+<!-- fixMe the above code is for the counting number -->
 </body>
 
 </html>
