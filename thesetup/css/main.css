@@ -114,7 +114,7 @@ hr.icon::after {
     background-position: center;
     background-size: cover;
     color: #ffffff;
-    min-height: 450px;
+    min-height: 500px;
 }
 
 #about h2 {
@@ -133,8 +133,36 @@ hr.icon::after {
     background-image: url(/thesetup/images/);
 }
 
+.service-item {
+    margin-bottom: 30px;
+}
+
+.service-title {
+    margin-left: 10px;
+    margin-top: -24px;
+    display: inline-block;
+}
+
+.service-title h4 {
+    color: #a56fc8;
+}
+
+.service-title h3 {
+    color: #4d4d4d;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.service-item i {
+    font-size: 48px;
+    color: #c1c1c1;
+    float: left;
+    border-right: 1px solid #873fb5;
+    padding-right: 20px;
+}
+
 #skills {
-    background-image: url(/thesetup/images/skills.jpg);
+    background: url(/thesetup/images/skills.jpg) fixed;
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
@@ -154,14 +182,14 @@ hr.icon::after {
 }
 
 #author {
-    background-image: url(/thesetup/images/author.jpg);
+    background: url(/thesetup/images/author.jpg)fixed;
     background-size: cover;
     min-height: 450px;
     color: #ffffff;
 }
 
 #footer {
-    background-image: url(/thesetup/images/footer-setup.jpg);
+    background: url(/thesetup/images/footer-setup.jpg)fixed;
     background-size: cover;
     min-height: 270px;
     color: #ffffff;
