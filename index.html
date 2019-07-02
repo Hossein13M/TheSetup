@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -331,7 +331,7 @@
     <section id="author">
         <div class="container-fluid">
             <div class="row">
-                <div class="text-center owl-demo">
+                <div class="text-center slick">
                     <div class="author-details text-center">
                         <h3 class="text-capitalize"> <strong>ehab alaa</strong> <span> - udemey</span> </h3>
                         <img src="/thesetup/images/ehab-alla.jpg" alt="the image is not available">
@@ -453,8 +453,9 @@
         new WOW().init();
 
         $(document).ready(function() {
-            $('.owl-demo').slick({
-
+            $('.slick').slick({
+                dots: true,
+                arrows: true
             });
         });
 
