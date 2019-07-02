@@ -42,10 +42,11 @@ hr.icon::after {
     content: "\f123";
     display: inline-block;
     position: relative;
-    top: -.8em;
+    top: -1.1em;
     padding: 0 .30em;
     font-family: 'FontAwesome';
-    font-size: 1.1em;
+    font-size: 30px;
+    ;
     color: #873fb5;
     background-color: #fff;
     /* fixMe this needs to be fixed with the help of Alious */
@@ -129,11 +130,16 @@ hr.icon::after {
     font-weight: 100;
 }
 
+#about hr {
+    margin-bottom: 1px;
+}
+
 #about h3 {
     font-weight: 300;
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
+    margin-top: 1px;
 }
 
 #about u {
@@ -396,6 +402,7 @@ hr.icon::after {
 
 #author img {
     margin-bottom: 35px;
+    display: inline;
 }
 
 
@@ -411,11 +418,13 @@ hr.icon::after {
     background-color: #ffffff;
     border-color: #8d3aa4;
     transition: all 0.2s ease-in-out;
+    outline: 0;
 }
 
 #contact input:focus {
     background-color: #ffffff;
     border-color: #8d3aa4;
+    outline: 0;
 }
 
 #contact textarea {
@@ -477,6 +486,7 @@ hr.icon::after {
 #copyright {
     color: #918c93;
     background-color: #241c29;
+    padding-top: 5px;
     height: auto;
 }
 
