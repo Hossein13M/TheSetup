@@ -29,9 +29,28 @@
 <body>
 
     <!-- divSep start of the header divSep this is the "the setup part of the website" -->
+
+
+    <nav>
+        <p>Home</p>
+        <p>Login</p>
+        <p>Blog</p>
+        <p>About</p>
+        <p>Contact us</p>
+    </nav>
+
+
     <header id="Home">
 
+
         <div class="container-fluid text-center home-section">
+            <div class="menu-bars">
+                <a href="#nav-bar">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+
             <h1 class="logo wow fadeIn">the <strong> setup</strong></h1>
             <h3 class="wow fadeIn" data-wow-delay="0.8s">A responsive, one page, HTML5 Bootstrap theme.<br> Created by <strong>Ehab Alaa.</strong></h3>
             <a href="#about" class="learn-more">
@@ -429,6 +448,7 @@
     <script src="/thesetup/js/slick.min.js"></script>
 
 
+
     <script>
         new WOW().init();
 
@@ -437,6 +457,10 @@
 
             });
         });
+
+        $('.menu-bars').click(function() {
+            $('nav').toggleClass('active-nav')
+        })
     </script>
 
 

@@ -55,6 +55,47 @@ hr.icon::after {
 
 /* divSep this is the section heading part */
 
+.menu-bars i {
+    background-color: #ffffff;
+    color: #7a25b4;
+    padding: 15px;
+    font-size: 25px;
+    margin-top: 5%;
+    float: left;
+    left: 10%;
+    position: relative;
+    border-radius: 5px;
+}
+
+nav {
+    width: 13%;
+    height: auto;
+    background: #ffffff;
+    color: #873fb5;
+    z-index: 1000;
+    position: absolute;
+    margin-top: 9.4%;
+    margin-left: 6.5%;
+    border-radius: 15px;
+    transform: translate3d(0, 0, -100px);
+    transition: all 1s ease;
+    line-height: 100px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+nav p {
+    padding-left: 20px;
+    font-size: 24px;
+    font-family: 'lato';
+}
+
+.active-nav {
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+    cursor: pointer;
+}
+
 .sectionHeading h3 {
     color: #873fb5;
     font-size: 24px;
@@ -268,6 +309,10 @@ hr.icon::after {
 .portfolio-overlay {
     max-width: 390px;
     height: 270px;
+}
+
+.portfolio-overlay {
+    /* fixMe */
 }
 
 #portfolio .portfolio-thumb img {
