@@ -60,23 +60,23 @@ hr.icon::after {
     color: #7a25b4;
     padding: 15px;
     font-size: 25px;
-    margin-top: 5%;
+    margin-top: 2%;
     float: left;
-    left: 10%;
+    left: 2%;
     position: relative;
     border-radius: 5px;
 }
 
 nav {
-    width: 13%;
-    height: auto;
+    width: 10%;
     background: #ffffff;
     color: #873fb5;
     z-index: 1000;
     position: absolute;
-    margin-top: 9.4%;
-    margin-left: 6.5%;
-    border-radius: 15px;
+    margin-top: 100px;
+    margin-left: -120px;
+    padding-bottom: 330px;
+    /* padding-left: 43px; */
     transform: translate3d(0, 0, -100px);
     transition: all 1s ease;
     line-height: 100px;
@@ -91,7 +91,7 @@ nav p {
 }
 
 .active-nav {
-    transform: translate3d(0px, 0, 0);
+    transform: translate3d(120px, 0, 0);
     opacity: 1;
     cursor: pointer;
 }
@@ -448,6 +448,50 @@ nav p {
 #author img {
     margin-bottom: 35px;
     display: inline;
+}
+
+
+/* divSep the bellow code is for the dots of the slick */
+
+
+/* .slick-dots li button::before {
+    font-size: 50px;
+    color: gainsboro;
+} */
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: 41.25;
+    color: rgb(247, 238, 238);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 60px;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 41px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
