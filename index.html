@@ -29,6 +29,14 @@
     <link href="hc-mobile-nav.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="hc-mobile-nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.sidebarBtn').click(function() {
+                $('.sidebar').toggleClass('active');
+            })
+        })
+    </script>
 
 
 </head>
@@ -39,31 +47,29 @@
 
 
 
-
-
-
     <header id="Home">
-        <nav>
-            <p>Home</p>
-            <p>Login</p>
-            <p>Blog</p>
-            <p>About</p>
-            <p>Contact us</p>
-            <p>another link1</p>
-            <p>another link2</p>
-            <p>another link3</p>
-            <p>another link4</p>
-            <p>another link5</p>
-            <p>another link6</p>
-        </nav>
+        <div class="sidebar">
+            <ul>
+                <li><a href="">sec1</a></li>
+                <li><a href="">sec2</a></li>
+                <li><a href="">sec3</a></li>
+                <li><a href="">sec4</a></li>
+                <li><a href="">sec5</a></li>
+            </ul>
+            <button class="sidebarBtn">
+                      <span></span>
+                    </button>
+
+
+        </div>
 
 
         <div class="container-fluid text-center home-section">
-            <div class="menu-bars">
+            <!-- <div class="menu-bars">
                 <a href="#nav-bar">
                     <i class="fa fa-bars"></i>
                 </a>
-            </div>
+            </div> -->
 
 
             <h1 class="logo wow fadeIn">the <strong> setup</strong></h1>
@@ -461,6 +467,9 @@
 
     <!-- libFile let's now include the slick -->
     <script src="/thesetup/js/slick.min.js"></script>
+    <!-- libFile the latest version of jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
 
 
 
@@ -473,10 +482,6 @@
                 arrows: true
             });
         });
-
-        $('.menu-bars').click(function() {
-            $('nav').toggleClass('active-nav')
-        })
     </script>
 
 

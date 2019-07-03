@@ -55,27 +55,91 @@ hr.icon::after {
 
 /* divSep this is the section heading part */
 
-.menu-bars i {
-    background-color: #ffffff;
-    color: #7a25b4;
-    padding: 15px;
-    font-size: 25px;
-    margin-top: 2%;
-    z-index: 1000;
-    float: left;
-    left: 2%;
-    position: relative;
-    border-radius: 5px;
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: #7a25b4;
+    width: 250px;
+    height: 100%;
+    transition: 0.3s;
 }
 
-nav {
+.active {
+    left: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    padding: 10px 20px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.sidebarBtn {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    border-radius: 10px;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+}
+
+.sidebarBtn span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #262626;
+    position: absolute;
+    top: 24px;
+    transition: 0.3s;
+}
+
+.sidebarBtn span:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #262626;
+    transition: 0.3s;
+}
+
+.sidebarBtn span:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #262626;
+    transition: 0.3s;
+}
+
+
+/* nav {
     width: 20%;
     height: 600px;
     background: #ffffff;
     color: #873fb5;
     z-index: 1000;
     position: absolute;
-    /* margin-top: 106px; */
     margin-left: -118px;
     padding-bottom: 330px;
     padding-left: 43px;
@@ -97,7 +161,7 @@ nav p {
     transform: translate3d(120px, 0, 0);
     opacity: 1;
     cursor: pointer;
-}
+} */
 
 .sectionHeading h3 {
     color: #873fb5;
