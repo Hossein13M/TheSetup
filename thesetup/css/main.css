@@ -61,6 +61,7 @@ hr.icon::after {
     padding: 15px;
     font-size: 25px;
     margin-top: 2%;
+    z-index: 1000;
     float: left;
     left: 2%;
     position: relative;
@@ -68,15 +69,16 @@ hr.icon::after {
 }
 
 nav {
-    width: 10%;
+    width: 20%;
+    height: 600px;
     background: #ffffff;
     color: #873fb5;
     z-index: 1000;
     position: absolute;
-    margin-top: 100px;
-    margin-left: -120px;
+    /* margin-top: 106px; */
+    margin-left: -118px;
     padding-bottom: 330px;
-    /* padding-left: 43px; */
+    padding-left: 43px;
     transform: translate3d(0, 0, -100px);
     transition: all 1s ease;
     line-height: 100px;
@@ -85,9 +87,10 @@ nav {
 }
 
 nav p {
-    padding-left: 20px;
     font-size: 24px;
     font-family: 'lato';
+    padding-top: 20px;
+    text-align: center;
 }
 
 .active-nav {
