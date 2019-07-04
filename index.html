@@ -36,11 +36,15 @@
     <header id="Home">
         <div class="sidebar">
             <ul>
-                <li><a href="">sec1</a></li>
-                <li><a href="">sec2</a></li>
-                <li><a href="">sec3</a></li>
-                <li><a href="">sec4</a></li>
-                <li><a href="">sec5</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#author">Author</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#footer">Footer</a></li>
             </ul>
             <button class="sidebarBtn"><span></span></button>
         </div>
@@ -50,9 +54,14 @@
             <h1 class="logo wow fadeIn">the <strong> setup</strong></h1>
             <h3 class="wow fadeIn" data-wow-delay="0.8s">A responsive, one page, HTML5 Bootstrap theme.<br> Created by <strong>Ehab Alaa.</strong></h3>
             <a href="#about" class="learn-more">
-                <i class="fa fa-angle-down third-arrow wow fadeIn" data-wow-delay="1.7s"></i>
-                <i class="fa fa-angle-down second-arrow wow fadeIn" data-wow-delay="1.3s"></i>
-                <i class="fa fa-angle-down first-arrow wow fadeIn" data-wow-delay="0.8s"></i>
+                <i class="fa fa-angle-down third-arrow"></i>
+                <i class="fa fa-angle-down second-arrow"></i>
+                <i class="fa fa-angle-down first-arrow"></i>
+                <!-- dastan the above did have something that I have removed them so I can use the CSS animation and they are:
+                wow fadeIn" data-wow-delay="1.7s
+                wow fadeIn" data-wow-delay="1.3s
+                wow fadeIn" data-wow-delay="0.8s
+                -->
             </a>
         </div>
 
@@ -432,7 +441,8 @@
     <script>
         $(".num").numScroll();
     </script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
     <!-- libFile this is the lightBox -->
     <script src="thesetup/js/lightbox-plus-jquery.min.js"></script>
 
@@ -442,8 +452,10 @@
     <!-- libFile let's now include the slick -->
     <script src="/thesetup/js/slick.min.js"></script>
     <!-- libFile the latest version of jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+
+    <!-- libFile this is the smooth scroller -->
+    <script src="/thesetup/js/jquery.smoothscroll.js"></script>
+    <script src="/thesetup/js/jquery.smoothscroll.min.js"></script>
 
 
 
@@ -455,14 +467,16 @@
                 dots: true,
                 arrows: true,
             });
-        });
 
-        $(document).ready(function() {
             $('.sidebarBtn').click(function() {
                 $('.sidebar').toggleClass('active');
                 $('.sidebarBtn').toggleClass('toggle');
             })
-        })
+
+            $(function() {
+                $('html').smoothScroll(500);
+            });
+        });
     </script>
 
 
