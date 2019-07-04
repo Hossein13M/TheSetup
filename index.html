@@ -24,29 +24,15 @@
     <link rel="stylesheet" href="/thesetup/css/slick.css">
     <link rel="stylesheet" href="/thesetup/css/slick-theme.css">
 
-
     <!-- libFile let's include the https://www.jqueryscript.net/menu/Multi-Level-Sidebar-Menu-HC-MobileNav.html -->
-    <link href="hc-mobile-nav.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="hc-mobile-nav.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.sidebarBtn').click(function() {
-                $('.sidebar').toggleClass('active');
-            })
-        })
-    </script>
-
 
 </head>
 
 <body>
 
     <!-- divSep start of the header divSep this is the "the setup part of the website" -->
-
-
-
     <header id="Home">
         <div class="sidebar">
             <ul>
@@ -56,21 +42,10 @@
                 <li><a href="">sec4</a></li>
                 <li><a href="">sec5</a></li>
             </ul>
-            <button class="sidebarBtn">
-                      <span></span>
-                    </button>
-
-
+            <button class="sidebarBtn"><span></span></button>
         </div>
 
-
         <div class="container-fluid text-center home-section">
-            <!-- <div class="menu-bars">
-                <a href="#nav-bar">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div> -->
-
 
             <h1 class="logo wow fadeIn">the <strong> setup</strong></h1>
             <h3 class="wow fadeIn" data-wow-delay="0.8s">A responsive, one page, HTML5 Bootstrap theme.<br> Created by <strong>Ehab Alaa.</strong></h3>
@@ -168,8 +143,7 @@
                     </header>
                     <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo.</p>
                 </div>
-                <!-- dastan this was the last post of the services sections -->
-
+                <!-- divSep this was the last post of the services sections -->
 
                 <!-- divSep the bellow is the last div for the row in the services sections  -->
             </div>
@@ -479,9 +453,16 @@
         $(document).ready(function() {
             $('.slick').slick({
                 dots: true,
-                arrows: true
+                arrows: true,
             });
         });
+
+        $(document).ready(function() {
+            $('.sidebarBtn').click(function() {
+                $('.sidebar').toggleClass('active');
+                $('.sidebarBtn').toggleClass('toggle');
+            })
+        })
     </script>
 
 

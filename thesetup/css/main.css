@@ -66,7 +66,8 @@ hr.icon::after {
 }
 
 .active {
-    left: 0;
+    left: 0px;
+    z-index: 1000;
 }
 
 ul {
@@ -88,14 +89,13 @@ ul li a {
 
 .sidebarBtn {
     position: absolute;
-    top: 0;
-    right: -50px;
+    top: 20px;
+    right: -70px;
     width: 50px;
-    border-radius: 10px;
     height: 50px;
     box-sizing: border-box;
     cursor: pointer;
-    background: #f5f5f5;
+    background: transparent;
     border: none;
     outline: none;
 }
@@ -104,7 +104,7 @@ ul li a {
     display: block;
     width: 35px;
     height: 3px;
-    background: #262626;
+    background: #fff;
     position: absolute;
     top: 24px;
     transition: 0.3s;
@@ -117,7 +117,7 @@ ul li a {
     left: 0;
     width: 100%;
     height: 3px;
-    background: #262626;
+    background: #fff;
     transition: 0.3s;
 }
 
@@ -128,8 +128,22 @@ ul li a {
     left: 0;
     width: 100%;
     height: 3px;
-    background: #262626;
+    background: #fff;
     transition: 0.3s;
+}
+
+.sidebarBtn.toggle span {
+    background: transparent;
+}
+
+.sidebarBtn.toggle span:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.sidebarBtn.toggle span:after {
+    top: 0;
+    transform: rotate(-45deg);
 }
 
 
@@ -520,11 +534,10 @@ nav p {
 
 /* divSep the bellow code is for the dots of the slick */
 
-
-/* .slick-dots li button::before {
+.slick-dots li button::before {
     font-size: 50px;
     color: gainsboro;
-} */
+}
 
 .slick-dots li button:before {
     font-family: 'slick';
